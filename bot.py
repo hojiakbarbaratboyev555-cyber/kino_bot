@@ -19,7 +19,7 @@ from aiogram.webhook.aiohttp_server import SimpleRequestHandler, setup_applicati
 # ===================== CONFIG =====================
 BOT_TOKEN  = os.getenv("BOT_TOKEN",  "8665030198:AAEBbRSpUzM7sWonzWfPDJy4vd7oAtzCgfI")
 ADMIN_IDS  = list(map(int, os.getenv("ADMIN_IDS", "8223476380").split(",")))
-WEBHOOK_HOST = os.getenv("WEBHOOK_HOST", "https://your-app.onrender.com")
+WEBHOOK_HOST = os.getenv("WEBHOOK_HOST", "https://kino-bot-nneu.onrender.com")
 WEBHOOK_PATH = f"/webhook/{BOT_TOKEN}"
 WEBHOOK_URL  = f"{WEBHOOK_HOST}{WEBHOOK_PATH}"
 PORT = int(os.getenv("PORT", 8080))
